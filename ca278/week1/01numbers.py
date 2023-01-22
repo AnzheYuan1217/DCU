@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 
-a = input("Will you have a cup of tea, Father?").upper()
-while a != "YES":
-    a = input("Ah go on?").upper()
+print("Enter a number:")
 
-print("Here you are.")
+a = int(input())
+
+sum = 0
+for i in range(a+1):
+    b = a - i
+    print(b)
+    sum += b
+
+print("")
+print(sum)
