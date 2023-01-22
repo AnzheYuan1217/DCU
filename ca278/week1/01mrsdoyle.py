@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-b = "Will you have a cup of tea, Father?"
-a = input().upper()
+a = input("Will you have a cup of tea, Father?").upper()
 while a != "YES":
-    b += "Ah go on?"
-    a = input().upper()
-b += "Here you are."
+    a = input("Ah go on?").upper()
 
-print(b)
+print("Here you are.")
