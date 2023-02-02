@@ -69,6 +69,7 @@ def index(s, letter):
     return s.index(letter) if letter in s else -1
 
 
+"""
 def previous_two(n):
     now = 1
     pre = 0
@@ -78,3 +79,18 @@ def previous_two(n):
         now = pre
         pre = seq
     return seq
+"""
+
+
+def previous_two(n):
+    back_1 = n - 1
+    back_2 = n - 2
+    if n == 0 or n == 1:
+        return n
+    return previous_two(back_1) + previous_two(back_2)
+
+
+if __name__ == "__main__":
+    print(previous_two(3))
+    print(previous_two(6))
+    print(previous_two(9))
