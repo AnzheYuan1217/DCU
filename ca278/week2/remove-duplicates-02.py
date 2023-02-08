@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+# list 1
 print("Please enter a list of values:")
 s = input()
 a = s.split(" ") if s != "" else []
 
+# list 2
 print("Please enter a second list of values:")
 s = input()
 b = s.split(" ") if s != "" else []

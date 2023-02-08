@@ -13,7 +13,7 @@ def get_price(age):
 
 
 def weird_case(some_str):
-    up = True
+    '''    up = True
     weird_str = ""
     for i in some_str:
         if i.isalpha() and up:
@@ -24,7 +24,21 @@ def weird_case(some_str):
             up = True
         else:
             weird_str += i
-    return weird_str
+    '''
+
+    j = 0
+    aa = ""
+    for i in some_str:
+        if i.isalpha():
+            if j % 2 == 0:
+                aa += i.upper()
+            else:
+                aa += i.lower()
+            j += 1
+        else:
+            aa += i
+
+    return aa
 
 
 def every_second(l1, l2):
@@ -69,7 +83,6 @@ def index(s, letter):
     return s.index(letter) if letter in s else -1
 
 
-"""
 def previous_two(n):
     now = 1
     pre = 0
@@ -79,18 +92,13 @@ def previous_two(n):
         now = pre
         pre = seq
     return seq
+
+
 """
-
-
 def previous_two(n):
     back_1 = n - 1
     back_2 = n - 2
     if n == 0 or n == 1:
         return n
     return previous_two(back_1) + previous_two(back_2)
-
-
-if __name__ == "__main__":
-    print(previous_two(3))
-    print(previous_two(6))
-    print(previous_two(9))
+"""
