@@ -10,13 +10,12 @@ with open(file_two) as f:
 
 names = []
 with open(file_one) as f:
-    a = f.readlines()
-    for i in a:
+    for i in f.readlines():
         temp = i.split()
         if temp[1].lower() == name:
             names.append(temp[0])
 
-if len(names) == 0:
+if not names:
     print("No-one has that surname")
 else:
     print(names)
