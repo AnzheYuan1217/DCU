@@ -10,7 +10,7 @@ class Patient:
     def generate_id(self):
         f_name = self.name.split(' ')[0]
         l_name = self.name.split(' ')[1]
-        patient_id = f_name[0].lower() + self.dob + self.phone[-3:] + l_name[0].upper()git
+        patient_id = f_name[0].lower() + self.dob + self.phone[-3:] + l_name[0].upper()
         return patient_id
 
     def get_age_bracket(self):
