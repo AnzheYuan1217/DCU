@@ -15,6 +15,7 @@ with open(file_id) as f:
             patients.append(ids.strip())  # use strip to remove the /n at the end
 
 if patients:  # False when this lis is empty.
+    print('Here are all the patients born in {}:'.format(target_year))
     print(patients)
 else:
     print('There are no patients born that year.')
